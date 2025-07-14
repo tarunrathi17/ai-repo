@@ -1,0 +1,11 @@
+table:
+  name: sales_data
+  columns:
+    - name: id
+      type: INTEGER
+    - name: region
+      type: TEXT
+    - name: state
+      type: TEXT
+    - name: sales
+      type: INTEGER

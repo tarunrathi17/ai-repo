@@ -1,0 +1,17 @@
+add inference about what all work it does (done)
+
+add 10 rows in table and state column so that we can retrieve more data and check from the data  (done)
+ 
+should respond to query like how can i help you, least 3 states, etc. (done)
+
+create another table like employee name, address, id and then implement it. (done)
+
+respond to query like employee name with salary or employee name with department and salary along with proper sql_query in response (done)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+use session in the sales_sight project (done)
+
+use session in the employee_data project ()
+
+redis as a memory ()
