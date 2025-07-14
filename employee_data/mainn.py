@@ -9,7 +9,7 @@ def run_session():
         user_query = input("Enter your query: ").strip()
         
         if user_query.lower() in ["exit", "quit"]:
-            print("👋 Session ended. Goodbye!")
+            print(" Session ended. Goodbye!")
             break
 
         response = orchestrator(user_query)
