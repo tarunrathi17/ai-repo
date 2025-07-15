@@ -1,38 +1,30 @@
-import matplotlib
-matplotlib.use('Agg')  
-
 import sqlite3
+import pandas as pd
 import matplotlib.pyplot as plt
-import os
 from datetime import datetime
+import os
 
 def visualize_salary_bar_chart():
     conn = sqlite3.connect("employee_data.db")
-    cursor = conn.cursor()
-
-    query = """
-    SELECT e.name, d.salary 
-    FROM employees e 
-    JOIN employee_details d ON e.employee_id = d.employee_id
-    """
-
-    cursor.execute(query)   
-    results = cursor.fetchall()
+    df = pd.read_sql_query("""
+        SELECT e.name, d.salary
+        FROM employees e
+        JOIN employee_details d ON e.employee_id = d.employee_id
+    """, conn)
     conn.close()
 
-    names = [row[0] for row in results]
-    salaries = [row[1] for row in results]
+    plt.figure(figsize=(10, 6))
+    plt.bar(df['name'], df['salary'], color='skyblue')
+    plt.xlabel('Employee Name')
+    plt.ylabel('Salary')
+    plt.title('Employee Salaries')
+    plt.xticks(rotation=45)
 
     os.makedirs("output", exist_ok=True)
-    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    plot_path = f"output/employee_salary_plot_{timestamp}.png"
-
-    plt.figure(figsize=(10, 6))
-    plt.barh(names, salaries, color='skyblue')
-    plt.xlabel("Salary")
-    plt.title("Employee Salaries")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    chart_path = f"output/chart_{timestamp}.png"
     plt.tight_layout()
-    plt.savefig(plot_path)
+    plt.savefig(chart_path)
     plt.close()
 
-    return plot_path
+    return chart_path

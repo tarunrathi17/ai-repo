@@ -1,0 +1,11 @@
+employee_id,name,address,department,salary
+101,Alice Johnson,"12 Oak Street, Boston",HR,55000
+102,Bob Smith,"98 Pine Road, Seattle",Engineering,85000
+103,Charlie Evans,"56 Maple Ave, Chicago",Marketing,62000
+104,Diana Prince,"33 Elm Street, Austin",Finance,70000
+105,Ethan Brown,"77 Birch Blvd, Denver",IT,78000
+106,Fiona Clarke,"21 Cedar Lane, Phoenix",Sales,60000
+107,George Turner,"88 Spruce Dr, Miami",Operations,65000
+108,Hannah Lee,"10 Willow Way, Dallas",HR,58000
+109,Ian Walker,"44 Cherry Ct, Atlanta",Engineering,90000
+110,Jenna Adams,"61 Aspen Loop, Portland",Marketing,63000

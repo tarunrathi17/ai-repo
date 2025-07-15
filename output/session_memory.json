@@ -1,0 +1,96 @@
+[
+  {
+    "query": "show me employee name with address",
+    "inference": "User wants to view employee names with their addresses.",
+    "sql_query": "SELECT name, address FROM employees",
+    "response": [
+      {
+        "name": "Alice Johnson",
+        "address": "12 Oak Street, Boston"
+      },
+      {
+        "name": "Bob Smith",
+        "address": "98 Pine Road, Seattle"
+      },
+      {
+        "name": "Charlie Evans",
+        "address": "56 Maple Ave, Chicago"
+      },
+      {
+        "name": "Diana Prince",
+        "address": "33 Elm Street, Austin"
+      },
+      {
+        "name": "Ethan Brown",
+        "address": "77 Birch Blvd, Denver"
+      },
+      {
+        "name": "Fiona Clarke",
+        "address": "21 Cedar Lane, Phoenix"
+      },
+      {
+        "name": "George Turner",
+        "address": "88 Spruce Dr, Miami"
+      },
+      {
+        "name": "Hannah Lee",
+        "address": "10 Willow Way, Dallas"
+      },
+      {
+        "name": "Ian Walker",
+        "address": "44 Cherry Ct, Atlanta"
+      },
+      {
+        "name": "Jenna Adams",
+        "address": "61 Aspen Loop, Portland"
+      }
+    ]
+  },
+  {
+    "query": "show me employee name with id",
+    "inference": "User wants to view employee names with their IDs.",
+    "sql_query": "SELECT employee_id, name FROM employees",
+    "response": [
+      {
+        "employee_id": 101,
+        "name": "Alice Johnson"
+      },
+      {
+        "employee_id": 102,
+        "name": "Bob Smith"
+      },
+      {
+        "employee_id": 103,
+        "name": "Charlie Evans"
+      },
+      {
+        "employee_id": 104,
+        "name": "Diana Prince"
+      },
+      {
+        "employee_id": 105,
+        "name": "Ethan Brown"
+      },
+      {
+        "employee_id": 106,
+        "name": "Fiona Clarke"
+      },
+      {
+        "employee_id": 107,
+        "name": "George Turner"
+      },
+      {
+        "employee_id": 108,
+        "name": "Hannah Lee"
+      },
+      {
+        "employee_id": 109,
+        "name": "Ian Walker"
+      },
+      {
+        "employee_id": 110,
+        "name": "Jenna Adams"
+      }
+    ]
+  }
+]
